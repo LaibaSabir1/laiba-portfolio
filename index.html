@@ -1,0 +1,361 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Laiba Sabir · AI Agents & Machine Learning Portfolio</title>
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Space+Grotesk:wght@500;600;700&family=Inter:wght@400;500;600&display=swap" rel="stylesheet">
+    <link rel="icon" type="image/png" href="images.png">
+    <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+
+    <!-- Decorative animated background -->
+    <div class="bg-blobs" aria-hidden="true">
+        <span></span><span></span><span></span>
+    </div>
+
+    <header class="site-header">
+        <h1>Laiba Sabir <span class="wave">👋</span></h1>
+        <p><span class="typed" id="typed-role">Computer Science Undergraduate</span></p>
+    </header>
+
+    <nav class="site-nav" aria-label="Main navigation">
+        <a href="#about">About</a>
+        <a href="#experience">Experience</a>
+        <a href="#projects">Projects</a>
+        <a href="#skills">Skills</a>
+        <a href="#hire">Hire Me</a>
+        <a href="#contact">Contact</a>
+    </nav>
+
+    <main>
+
+        <!-- About -->
+        <section id="about" class="about reveal">
+            <div class="about__photo-wrap">
+                <img src="images.png"
+                     alt="Illustrated avatar of Laiba Sabir, a computer science student"
+                     class="about__photo"
+                     width="190" height="190"
+                     loading="lazy">
+            </div>
+            <div class="about__text">
+                <h2>About Me</h2>
+                <p>
+                    Final‑year Computer Science student at <span class="highlight">International Islamic University Islamabad</span>
+                    (CGPA 3.65), specializing in <span class="highlight">AI agents</span>, automation, and applied machine learning.
+                </p>
+                <p>
+                    I have completed a machine learning internship at FlyRank AI, an AI Agents &amp; Automation Fellowship with
+                    Mentor Tech Hub, and currently work as a Level V AI content researcher with the AI Community of Pakistan.
+                    I build agentic workflows (LangChain, LangGraph, CrewAI, n8n, MCP), RAG pipelines, and Java/C++ desktop systems.
+                </p>
+                <p>
+                    I am seeking an industrial FYP placement or AI/ML internship to apply these skills in production settings.
+                </p>
+            </div>
+        </section>
+
+        <!-- Experience -->
+        <section id="experience" class="experience reveal">
+            <h2>Experience</h2>
+            <ul class="experience-list">
+
+                <li class="experience-item">
+                    <h3>AI Content Researcher — LEGION Level V</h3>
+                    <p class="experience-meta">AI Community of Pakistan (AICP) · Aug 2026 – Present</p>
+                    <p>
+                        Authored a rank‑wise curriculum on Agentic AI and Autonomous AI Systems, covering
+                        LangChain, LangGraph, CrewAI, AutoGen, LlamaIndex, Pinecone, and LangSmith.
+                        Documented core agentic architectures including ReAct, plan‑and‑execute,
+                        orchestrator‑worker, and reflexion loops. Delivered a 20‑slide training deck, a
+                        25–30 question MCQ assessment, and a problem‑solving assignment for LEGION Modules 1 &amp; 2.
+                    </p>
+                </li>
+
+                <li class="experience-item">
+                    <h3>Machine Learning Intern — FlyRank AI</h3>
+                    <p class="experience-meta">Jun 2026 – Sep 2026 · 8‑week capstone · Mentor: Mirza Aščerić</p>
+                    <p>
+                        Built a Content Refresh / Page Review Priority ranking model to prioritize review
+                        of ~30,000 web pages. Applied client‑holdout validation (GroupShuffleSplit) to reveal
+                        an honest Precision@50 of ~0.72, versus a misleading ~0.90 on a naive stratified split.
+                        Identified and excluded leaky features (trend_pct, trend_direction) that inflated
+                        apparent model performance. Shipped a logistic regression model that beat the baseline
+                        heuristic (~0.32) by roughly 2.25×. Published the capstone research paper via GitHub
+                        Pages; internship completed with a formal role recommendation.
+                    </p>
+                </li>
+
+                <li class="experience-item">
+                    <h3>AI Agents &amp; Automation Fellow — Mentor Tech Hub</h3>
+                    <p class="experience-meta">Cohort 1, 2026 · Jul 2026 – Aug 2026</p>
+                    <p>
+                        Designed and deployed the TechNova Employee Policy &amp; Procedure Support Agent, an
+                        n8n‑based conversational agent accepting both text and voice input. Built intent
+                        classification with Groq's llama‑3.3‑70b‑versatile into simple_query / action_required /
+                        escalate_to_hr routes. Implemented RAG retrieval via a native n8n MCP Server with Gemini
+                        embeddings, plus a Slack human‑in‑the‑loop approval step for sensitive actions. Added a
+                        Deepgram speech‑to‑text/text‑to‑speech voice layer and Google Sheets logging for audit
+                        trail. Deployed the agent on Railway using a Postgres‑backed n8n template; resolved a
+                        hardcoded GCP credential exposure and various integration bugs.
+                    </p>
+                    <p class="experience-meta" style="margin-top:0.5rem;">
+                        <a href="https://github.com/LaibaSabir1/HR-Policy-Support-Agent-Capstone" target="_blank" rel="noopener">
+                            github.com/LaibaSabir1/HR-Policy-Support-Agent-Capstone
+                        </a>
+                    </p>
+                </li>
+
+                <li class="experience-item">
+                    <h3>Social Media Team Member — Youth Empowerment</h3>
+                    <p class="experience-meta">2026</p>
+                    <p>
+                        Supported content creation, communication, and digital engagement as part of the
+                        organization's social media team.
+                    </p>
+                </li>
+            </ul>
+        </section>
+
+        <!-- Projects -->
+        <section id="projects" class="projects reveal">
+            <h2>Projects</h2>
+            <div class="card-grid">
+
+                <article class="card">
+                    <h3>TechNova Policy Support Agent</h3>
+                    <p class="card__stack">n8n · Groq · Gemini · MCP · Slack · Deepgram</p>
+                    <p>
+                        End‑to‑end agentic automation project featuring intent classification, RAG retrieval,
+                        Slack human‑in‑the‑loop approval, and voice I/O, deployed on Railway.
+                    </p>
+                    <div class="card__links">
+                        <a href="https://github.com/LaibaSabir1/HR-Policy-Support-Agent-Capstone" target="_blank" rel="noopener">View on GitHub →</a>
+                    </div>
+                </article>
+
+                <article class="card">
+                    <h3>Mobile Technician System</h3>
+                    <p class="card__stack">Java · Swing · MS Access · JDBC · DAO</p>
+                    <p>
+                        Desktop application for managing technician records using a layered DAO architecture
+                        that separates UI and database logic.
+                    </p>
+                    <div class="card__links">
+                        <a href="https://github.com/LaibaSabir1/Mobile_Technician_System" target="_blank" rel="noopener">View on GitHub →</a>
+                    </div>
+                </article>
+
+                <article class="card">
+                    <h3>Splitwise Expense Minimizer</h3>
+                    <p class="card__stack">Python · Graph Algorithms</p>
+                    <p>
+                        Greedy/graph‑based algorithm to minimize the number of transactions needed to settle
+                        group expenses.
+                    </p>
+                    <div class="card__links">
+                        <a href="https://github.com/LaibaSabir1/Splitwise_Expense_Minimizer" target="_blank" rel="noopener">View on GitHub →</a>
+                    </div>
+                </article>
+
+                <article class="card">
+                    <h3>RAG Pipeline</h3>
+                    <p class="card__stack">LangChain · ChromaDB · OpenAI · Jupyter</p>
+                    <p>
+                        Retrieval‑Augmented Generation system built with LangChain, ChromaDB, and OpenAI for
+                        context‑aware question answering.
+                    </p>
+                </article>
+
+                <article class="card">
+                    <h3>Hospital Management System</h3>
+                    <p class="card__stack">C++ · Dijkstra / DFS / BFS</p>
+                    <p>
+                        Graph‑based ambulance dispatch system with role‑based login, built as an additional
+                        coursework project.
+                    </p>
+                </article>
+
+                <article class="card">
+                    <h3>Delivery Optimization</h3>
+                    <p class="card__stack">C++ · Graph Theory · TSP</p>
+                    <p>
+                        Route optimization using TSP, Nearest Neighbor, and Brute Force algorithms for
+                        e‑commerce delivery scenarios.
+                    </p>
+                </article>
+            </div>
+        </section>
+
+        <!-- Skills -->
+        <section id="skills" class="skills reveal">
+            <h2>Skills</h2>
+
+            <div class="skills__group">
+                <h3>Languages</h3>
+                <ul class="skills__list">
+                    <li>Java (OOP, Swing, JDBC, DAO)</li>
+                    <li>Python</li>
+                    <li>C / C++ (multithreading, semaphores, IPC)</li>
+                    <li>SQL</li>
+                    <li>HTML</li>
+                </ul>
+            </div>
+
+            <div class="skills__group">
+                <h3>AI &amp; Agents</h3>
+                <ul class="skills__list">
+                    <li>LangChain</li>
+                    <li>LangGraph</li>
+                    <li>CrewAI</li>
+                    <li>RAG</li>
+                    <li>MCP</li>
+                    <li>n8n</li>
+                    <li>Prompting (CoT, ReAct)</li>
+                    <li>Agent Memory (Mem0)</li>
+                    <li>Tool / function calling</li>
+                </ul>
+            </div>
+
+            <div class="skills__group">
+                <h3>ML &amp; Data</h3>
+                <ul class="skills__list">
+                    <li>Logistic Regression</li>
+                    <li>Model Validation</li>
+                    <li>ChromaDB</li>
+                    <li>FAISS</li>
+                    <li>HuggingFace Embeddings</li>
+                    <li>Groq &amp; Gemini APIs</li>
+                </ul>
+            </div>
+
+            <div class="skills__group">
+                <h3>Tools &amp; Platforms</h3>
+                <ul class="skills__list">
+                    <li>Git / GitHub</li>
+                    <li>VS Code</li>
+                    <li>Visual Studio</li>
+                    <li>Google Colab</li>
+                    <li>Jupyter Notebook</li>
+                    <li>Docker</li>
+                    <li>Postman</li>
+                    <li>Kali Linux</li>
+                </ul>
+            </div>
+        </section>
+
+        <!-- Hire form -->
+        <section id="hire" class="hire reveal">
+            <h2>Hire Me</h2>
+            <p>Tell me about your project and I’ll get back to you within 48 hours.</p>
+
+            <form class="hire-form" action="https://formspree.io/f/mnpnnepe" method="POST">
+                <div class="form-row">
+                    <label for="name">Your name</label>
+                    <input type="text" id="name" name="name" placeholder="e.g. Alex Rivera" required>
+                </div>
+
+                <div class="form-row">
+                    <label for="email">Email address</label>
+                    <input type="email" id="email" name="email" placeholder="alex@example.com" required>
+                </div>
+
+                <fieldset class="form-fieldset">
+                    <legend>Project type</legend>
+                    <label><input type="radio" name="project" value="ai-agents" checked> AI agents &amp; automation</label>
+                    <label><input type="radio" name="project" value="ml"> Machine learning / data</label>
+                    <label><input type="radio" name="project" value="web"> Web development</label>
+                    <label><input type="radio" name="project" value="other"> Other (let’s chat)</label>
+                </fieldset>
+
+                <fieldset class="form-fieldset">
+                    <legend>Services needed</legend>
+                    <label><input type="checkbox" name="service" value="design"> UI / visual design</label>
+                    <label><input type="checkbox" name="service" value="development"> Front‑end / back‑end development</label>
+                    <label><input type="checkbox" name="service" value="testing"> Testing &amp; accessibility</label>
+                    <label><input type="checkbox" name="service" value="research"> Research &amp; prototyping</label>
+                </fieldset>
+
+                <button type="submit">Send request</button>
+            </form>
+        </section>
+
+        <!-- Contact -->
+        <section id="contact" class="contact reveal">
+            <h2>Contact Me</h2>
+            <table>
+                <thead>
+                    <tr><th>Platform</th><th>Link</th></tr>
+                </thead>
+                <tbody>
+                    <tr>
+                        <td>GitHub</td>
+                        <td><a href="https://github.com/LaibaSabir1" target="_blank" rel="noopener">github.com/LaibaSabir1</a></td>
+                    </tr>
+                    <tr>
+                        <td>LinkedIn</td>
+                        <td><a href="https://www.linkedin.com/in/laiba-sabir-6b23a3306" target="_blank" rel="noopener">linkedin.com/in/laiba-sabir-6b23a3306</a></td>
+                    </tr>
+                    <tr>
+                        <td>Email</td>
+                        <td><a href="mailto:laibasabir571@gmail.com">laibasabir571@gmail.com</a></td>
+                    </tr>
+                </tbody>
+            </table>
+        </section>
+
+    </main>
+
+    <footer class="site-footer">
+        <p>© 2025 Laiba Sabir. Built with semantic HTML &amp; CSS.</p>
+    </footer>
+
+    <script>
+        // ---------- Typing effect for the header role ----------
+        const roles = [
+            "Computer Science Undergraduate",
+            "AI Agents & Automation",
+            "Machine Learning Practitioner",
+            "RAG & LLM Enthusiast"
+        ];
+        const typedEl = document.getElementById("typed-role");
+        let roleIndex = 0, charIndex = 0, deleting = false;
+
+        function typeLoop() {
+            const current = roles[roleIndex];
+            if (!deleting) {
+                typedEl.textContent = current.slice(0, ++charIndex);
+                if (charIndex === current.length) {
+                    deleting = true;
+                    setTimeout(typeLoop, 1500);
+                    return;
+                }
+            } else {
+                typedEl.textContent = current.slice(0, --charIndex);
+                if (charIndex === 0) {
+                    deleting = false;
+                    roleIndex = (roleIndex + 1) % roles.length;
+                }
+            }
+            setTimeout(typeLoop, deleting ? 40 : 80);
+        }
+        typeLoop();
+
+        // ---------- Scroll reveal ----------
+        const revealEls = document.querySelectorAll(".reveal");
+        const observer = new IntersectionObserver((entries) => {
+            entries.forEach((entry) => {
+                if (entry.isIntersecting) {
+                    entry.target.classList.add("visible");
+                    observer.unobserve(entry.target);
+                }
+            });
+        }, { threshold: 0.12 });
+        revealEls.forEach((el) => observer.observe(el));
+    </script>
+</body>
+</html>
